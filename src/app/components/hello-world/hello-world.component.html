@@ -3,3 +3,10 @@
 <p>il tuo nome e': {{ name }}</p>
 <button (click)="saluta()" [disabled]="isDisabled">Cliccami</button>
 <button disabled="true">sono disabilitato</button>
+<div *ngIf="isShow; else isFalse">
+  questo contenuto verra' visualizzato solo se la condition e' TRUE
+</div>
+<ng-template #isFalse>
+  questo contenuto verra' visualizzato solo se la condition e' FALSE
+</ng-template>
+<button (click)="this.isShow = !this.isShow">Cliccami</button>

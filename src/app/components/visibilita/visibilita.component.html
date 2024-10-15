@@ -1,0 +1,7 @@
+<p *ngIf="isShow; else isFalse">
+  questo contenuto verra' visualizzato solo se la condition e' TRUE
+</p>
+<ng-template #isFalse>
+  questo contenuto verra' visualizzato solo se la condition e' FALSE
+</ng-template>
+<button (click)="this.isShow = !this.isShow">Cliccami</button>

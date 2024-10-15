@@ -1,0 +1,6 @@
+<div>
+  <p *ngIf="isLoading">Caricamento in corso..</p>
+  <p *ngIf="!isLoading">Caricamento completato</p>
+</div>
+
+<button (click)="restartLoading()">Ricarica</button>

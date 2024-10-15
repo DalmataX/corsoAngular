@@ -5,6 +5,8 @@ import { Esercizio1Component } from './components/esercizio-1/esercizio-1.compon
 import { CounterComponent } from './components/counter/counter.component';
 ('./components/counter/counter.component');
 import { SommatoreComponent } from './components/sommatore/sommatore.component';
+import { VisibilitaComponent } from './components/visibilita/visibilita.component';
+import { CaricamentoComponent } from './components/caricamento/caricamento.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +17,8 @@ import { SommatoreComponent } from './components/sommatore/sommatore.component';
     Esercizio1Component,
     CounterComponent,
     SommatoreComponent,
+    VisibilitaComponent,
+    CaricamentoComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
