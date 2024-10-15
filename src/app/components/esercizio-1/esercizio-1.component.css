@@ -1,0 +1,15 @@
+.persona {
+  display: flex;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+p {
+  font-size: medium;
+  margin: 10px;
+  padding: 5px;
+  color: blue;
+}

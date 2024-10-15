@@ -1,0 +1,5 @@
+<h1>{{ message }}-{{ name }}</h1>
+<input type="text" [(ngModel)]="name" />
+<p>il tuo nome e': {{ name }}</p>
+<button (click)="saluta()" [disabled]="isDisabled">Cliccami</button>
+<button disabled="true">sono disabilitato</button>
