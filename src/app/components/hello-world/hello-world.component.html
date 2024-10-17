@@ -1,7 +1,8 @@
+<h1>{{ datoDalParent }}</h1>
 <h1>{{ message }}-{{ name }}</h1>
 <input type="text" [(ngModel)]="name" />
 <p>il tuo nome e': {{ name }}</p>
-<button (click)="saluta()" [disabled]="isDisabled">Cliccami</button>
+<!-- <button (click)="saluta()" [disabled]="isDisabled">Cliccami</button>
 <button disabled="true">sono disabilitato</button>
 <div *ngIf="isShow; else isFalse">
   questo contenuto verra' visualizzato solo se la condition e' TRUE
@@ -10,3 +11,21 @@
   questo contenuto verra' visualizzato solo se la condition e' FALSE
 </ng-template>
 <button (click)="this.isShow = !this.isShow">Cliccami</button>
+<ul>
+  <li *ngFor="let frutti of fruits; let i = index">{{ i + 1 }}.{{ frutti }}</li>
+</ul>
+<ul>
+  <div *ngFor="let item of citta">
+    <p>{{ item.nome }} {{ item.cap }}</p>
+  </div>
+</ul>
+<table class="table">
+  <thead>
+    <th>Prodotto</th>
+    <th>Prezzo</th>
+  </thead>
+  <tbody *ngFor="let item of prodotti">
+    <td>{{ item.prodotto }}</td>
+    <td>{{ item.prezzo }}</td>
+  </tbody>
+</table> -->

@@ -19,6 +19,7 @@ export class CaricamentoComponent {
     this.isLoading = true;
     setTimeout(() => {
       this.isLoading = false;
+      alert('Caricamento completato!')
     }, 3000);
   }
 

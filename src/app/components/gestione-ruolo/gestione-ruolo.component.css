@@ -1,0 +1,15 @@
+.dtPerson {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: aqua;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.notPerson {
+  font-weight: 400;
+  text-transform: capitalize;
+  color: green;
+  margin: 1rem;
+  padding: 1rem;
+}

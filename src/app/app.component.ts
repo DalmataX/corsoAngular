@@ -7,6 +7,11 @@ import { CounterComponent } from './components/counter/counter.component';
 import { SommatoreComponent } from './components/sommatore/sommatore.component';
 import { VisibilitaComponent } from './components/visibilita/visibilita.component';
 import { CaricamentoComponent } from './components/caricamento/caricamento.component';
+import { ElencopersoneComponent } from './components/elencopersone/elencopersone.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { GestioneRuoloComponent } from './components/gestione-ruolo/gestione-ruolo.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +24,11 @@ import { CaricamentoComponent } from './components/caricamento/caricamento.compo
     SommatoreComponent,
     VisibilitaComponent,
     CaricamentoComponent,
+    ElencopersoneComponent,
+    DropdownComponent,
+    GestioneRuoloComponent,
+    HomePageComponent,
+    ProductListComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

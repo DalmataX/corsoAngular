@@ -1,0 +1,8 @@
+<select [(ngModel)]="paeseScelto">
+  <option value="">Seleziona un Paese</option>
+  <option *ngFor="let paese of paesi">
+    {{ paese.nome }}
+  </option>
+</select>
+
+<div *ngIf="paeseScelto">Paese selezionato: {{ paeseScelto }}</div>
