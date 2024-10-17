@@ -5,6 +5,7 @@ import { ElencopersoneComponent } from './components/elencopersone/elencopersone
 import { DetailComponent } from './components/detail/detail.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { FormUserComponent } from './components/form-user/form-user.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -12,5 +13,6 @@ export const routes: Routes = [
   { path: 'user', component: UserComponent },
   { path: 'elenco', component: ElencopersoneComponent },
   { path: 'dettagli/:id', component: DetailComponent },
+  { path: 'form', component: FormUserComponent },
   { path: '**', component: PageNotFoundComponent },
 ];

@@ -12,10 +12,11 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { GestioneRuoloComponent } from './components/gestione-ruolo/gestione-ruolo.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterModule],
+  imports: [RouterOutlet, RouterModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
