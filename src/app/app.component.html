@@ -1,1 +1,10 @@
-<app-home-page></app-home-page>
+<div>
+  <div>
+    <ul>
+      <li routerLink="home">home</li>
+      <li routerLink="user">user</li>
+      <li (click)="goToUser()">elenco</li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+</div>

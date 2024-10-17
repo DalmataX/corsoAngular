@@ -64,6 +64,6 @@ export class HelloWorldComponent {
     console.log('sono stato modificato');
   }
   saluta() {
-    alert('Ciao compa!');
+    console.log('Ciao compa!');
   }
 }

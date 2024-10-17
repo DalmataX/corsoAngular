@@ -18,7 +18,7 @@ export class CounterComponent {
     if (this.count >= 1) {
       this.count--;
     } else {
-      alert('Non puoi scendere sotto lo zero!');
+      console.log('Non puoi scendere sotto lo zero!');
     }
   }
 
