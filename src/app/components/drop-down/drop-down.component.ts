@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-dropdown',
+  selector: 'app-drop-down',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './dropdown.component.html',
-  styleUrl: './dropdown.component.css',
+  templateUrl: './drop-down.component.html',
+  styleUrl: './drop-down.component.css',
 })
 export class DropdownComponent {
   paesi = [

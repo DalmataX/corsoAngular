@@ -1,4 +1,5 @@
 export interface IUser {
+  data: IUser[];
   id: number;
   avatar: string;
   email: string;

@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   selector: 'app-elencopersone',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './elencopersone.component.html',
-  styleUrl: './elencopersone.component.css',
+  templateUrl: './elenco-persone.component.html',
+  styleUrl: './elenco-persone.component.css',
 })
 export class ElencopersoneComponent {
   persone = [

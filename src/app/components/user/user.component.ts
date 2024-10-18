@@ -19,7 +19,7 @@ export class UserComponent {
 
   ngOnInit() {
     this.userDTO.getUser(1, 10).subscribe({
-      next: (response: any) => {
+      next: (response: IUser) => {
         this.userDetail = response.data;
         console.log(response.data);
       },

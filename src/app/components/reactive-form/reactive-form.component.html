@@ -1,22 +1,13 @@
-<!-- <h1>Reactive Form</h1>
+<h1>Reactive Form</h1>
 <form [formGroup]="myForm">
   <div>
-    <label for="nome">Nome</label>
-    <input formControlName="nome" type="text" />
+    <label for="username">Username</label>
+    <input formControlName="username" type="text" />
   </div>
-  <div *ngIf="myForm.get('nome')?.invalid && myForm.get('nome')?.touched">
-    Il nome e' richiesto per inviare i dati
-  </div>
-  <div>
-    <label for="cognome">Cognome</label>
-    <input formControlName="cognome" type="text" />
-  </div>
-  <div formArrayName="indirizzi">
-    <div *ngFor="let address of indirizzo.controls; let i = index">
-      <label for="indirizzo">Indirizzo</label>
-      <input [formControlName]="i" type="text" />
-    </div>
-    <button (click)="addIndirizzo()">Aggiungi Indirizzo</button>
+  <div
+    *ngIf="myForm.get('username')?.invalid && myForm.get('username')?.touched"
+  >
+    L'username e' richiesto per inviare i dati
   </div>
   <div>
     <label for="email">Email</label>
@@ -37,6 +28,4 @@
   <button (click)="sendData()" [disabled]="myForm.invalid">
     Invia i tuoi dati
   </button>
-</form> -->
-
-<!-- TEMPLATE DRIVEN FORM -->
+</form>
