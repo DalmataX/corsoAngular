@@ -15,6 +15,7 @@ export class UserComponent {
   constructor(private userDTO: UserService, private router: Router) {}
 
   userDetail: IUser[] = [];
+  error: string = '';
 
   ngOnInit() {
     this.userDTO.getUser(1, 10).subscribe({
@@ -23,7 +24,9 @@ export class UserComponent {
         console.log(response.data);
       },
       error: (err) => {
-        console.error(err);
+        if (err.status == 400) {
+          this.error = 'errore nella chiamata ';
+        }
       },
     });
   }

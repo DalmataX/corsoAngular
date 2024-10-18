@@ -1,6 +1,7 @@
 <div>
   <h1>Welcome</h1>
 </div>
+<h2>{{ error }}</h2>
 <div *ngFor="let user of userDetail">
   <img (click)="goToDetail(user.id)" src="{{ user.avatar }}" alt="" />
   <p>Nome: {{ user.first_name }}</p>
