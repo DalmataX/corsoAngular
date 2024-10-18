@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-form-user',
+  selector: 'app-esercizio-registrazione',
   standalone: true,
-  imports: [FormsModule],
-  templateUrl: './form-user.component.html',
-  styleUrl: './form-user.component.css',
+  imports: [FormsModule, CommonModule],
+  templateUrl: './esercizio-registrazione.component.html',
+  styleUrl: './esercizio-registrazione.component.css',
 })
-export class FormUserComponent {
+export class EsercizioRegistrazioneComponent {
   utente = {
-    nome: '',
-    cognome: '',
+    username: '',
     email: '',
     password: '',
   };
